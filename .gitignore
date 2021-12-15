@@ -1,1 +1,12 @@
-node_modules
+.DS_Store
+.vscode
+.idea
+file-publisher/config/default.ts
+platform/next.config.js
+platform/.idea
+docker-compose.yml
+tmp
+.editorconfig
+.clocignore
+GIT_IGNORED
+coverage
