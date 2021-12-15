@@ -10,3 +10,4 @@ tmp
 .clocignore
 GIT_IGNORED
 coverage
+node_modules
