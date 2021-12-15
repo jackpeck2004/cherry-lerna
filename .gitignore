@@ -15,4 +15,6 @@ packages/validator/lib
 packages/validator/config/default.ts
 packages/extractor/coverage
 packages/extractor/lib
+packages/platform/.next
+packages/platform/next.config.js
 node_modules

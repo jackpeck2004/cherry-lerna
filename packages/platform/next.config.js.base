@@ -1,0 +1,77 @@
+// basic old w/o entrypoint
+module.exports = {
+  env: {
+    // Will only be available on the server side
+    MONGO_URI: "mongodb://127.0.0.1:27017/cherry-challenge",
+    PUBLISHER_URI: "http://localhost:4001",
+  },
+  publicRuntimeConfig: {
+    // Will be available on both server and client
+    staticFolder: "/static",
+  },
+};
+
+// New Version with correct setting
+const environment = process.env.NODE_ENV || "development";
+const { MongoClient } = require("mongodb");
+
+let mongoUri;
+
+if (environment !== "development") {
+  mongoUri = process.env.MONGO_URI || "mongodb://mongo:27017/cherry-challenge";
+} else {
+  mongoUri = "mongodb://localhost:27018/cherry-challenge";
+}
+
+async function listDatabases(client){
+  databasesList = await client.db().admin().listDatabases();
+
+  console.log("Databases:");
+  databasesList.databases.forEach(db => console.log(` - ${db.name}`));
+};
+
+
+async function entry() {
+  const client = new MongoClient(mongoUri);
+  try {
+    await client.connect()
+
+    await listDatabases(client);
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+module.exports = {
+  env: {
+    // Will only be available on the server side
+    MONGO_URI: mongoUri,
+    PUBLISHER_URI: "http://localhost:4001",
+    PRIVATE_KEY: "ljsdfjlksdjklfsljksdjlkdskl",
+    SESSION_SECRET: "y%-2yiRagzTX+aZpcjBi+wL_1TGM!0@hC2Z",
+  },
+  publicRuntimeConfig: {
+    // Will be available on both server and client
+    staticFolder: "/static",
+  },
+  webpack: (config, options) => {
+    config.plugins.push({
+      apply: (compiler) => {
+        compiler.hooks.afterEmit.tap('AfterEmitPlugin', (compilation) => {
+          entry(this.env);
+        });
+      }
+    })
+    return config
+  },
+
+  // webpack: (config, options) => {
+  //   config.plugins.push({
+  //     apply: (compiler) => {
+  //       compiler.hooks.afterEmit.tap("AfterEmitPlugin", (compilation) => {
+  //         console.log("run after build");
+  //       });
+  //     },
+  //   });
+  // },
+};
