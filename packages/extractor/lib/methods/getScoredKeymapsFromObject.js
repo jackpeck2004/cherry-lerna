@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const Keymap_1 = require("../models/Keymap");
-const createFieldDictionaryFromKeymaps_1 = require("./createFieldDictionaryFromKeymaps");
-const mapObjectKeysToArray_1 = require("./mapObjectKeysToArray");
-const scoreKeymaps_1 = require("./scoreKeymaps");
+const Keymap_1 = __importDefault(require("../models/Keymap"));
+const createFieldDictionaryFromKeymaps_1 = __importDefault(require("./createFieldDictionaryFromKeymaps"));
+const mapObjectKeysToArray_1 = __importDefault(require("./mapObjectKeysToArray"));
+const scoreKeymaps_1 = __importDefault(require("./scoreKeymaps"));
 const getScoredKeymapsFromObject = (data) => {
     let keymaps = [];
     if (Array.isArray(data)) {

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="7" failures="0" errors="0" time="2.332">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-12-15T15:00:50" time="1.506" tests="6">
+    <testcase classname=" Check method cleanKeys with top-level object" name=" Check method cleanKeys with top-level object" time="0.006">
+    </testcase>
+    <testcase classname=" Check method cleanKeys with nested object" name=" Check method cleanKeys with nested object" time="0.001">
+    </testcase>
+    <testcase classname=" Check method cleanKeys with arrays" name=" Check method cleanKeys with arrays" time="0.001">
+    </testcase>
+    <testcase classname=" Check method similMaps between two equal maps" name=" Check method similMaps between two equal maps" time="0">
+    </testcase>
+    <testcase classname=" Check method similMaps between two completley different maps" name=" Check method similMaps between two completley different maps" time="0">
+    </testcase>
+    <testcase classname=" Check method similMaps between two different maps" name=" Check method similMaps between two different maps" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-12-15T15:00:52" time="0.125" tests="1">
+    <testcase classname=" Sample test" name=" Sample test" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>

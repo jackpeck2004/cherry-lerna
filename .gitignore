@@ -10,4 +10,9 @@ tmp
 .clocignore
 GIT_IGNORED
 coverage
+packages/validator/coverage
+packages/validator/lib
+packages/validator/config/default.ts
+packages/extractor/coverage
+packages/extractor/lib
 node_modules

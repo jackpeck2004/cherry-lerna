@@ -1,11 +1,14 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const Keymap_1 = require("../models/Keymap");
+const Keymap_1 = __importDefault(require("../models/Keymap"));
 require("jest-extended");
-const extractCorrespondentValuesFromKeymap_1 = require("../methods/extractCorrespondentValuesFromKeymap");
-const extractValueTupleFromObject_1 = require("../methods/extractValueTupleFromObject");
-const getScoredKeymapsFromObject_1 = require("../methods/getScoredKeymapsFromObject");
-const mapObjectKeysToArray_1 = require("../methods/mapObjectKeysToArray");
+const extractCorrespondentValuesFromKeymap_1 = __importDefault(require("../methods/extractCorrespondentValuesFromKeymap"));
+const extractValueTupleFromObject_1 = __importDefault(require("../methods/extractValueTupleFromObject"));
+const getScoredKeymapsFromObject_1 = __importDefault(require("../methods/getScoredKeymapsFromObject"));
+const mapObjectKeysToArray_1 = __importDefault(require("../methods/mapObjectKeysToArray"));
 it("Check method constructKeymapFromObject with Correct Data", () => {
     const res = (0, mapObjectKeysToArray_1.default)({
         a: "a",

@@ -1,9 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.extractValueTupleFromObject = void 0;
-const ValueTuple_1 = require("../models/ValueTuple");
-const extractCorrespondentValuesFromKeymap_1 = require("./extractCorrespondentValuesFromKeymap");
-const getScoredKeymapsFromObject_1 = require("./getScoredKeymapsFromObject");
+const ValueTuple_1 = __importDefault(require("../models/ValueTuple"));
+const extractCorrespondentValuesFromKeymap_1 = __importDefault(require("./extractCorrespondentValuesFromKeymap"));
+const getScoredKeymapsFromObject_1 = __importDefault(require("./getScoredKeymapsFromObject"));
 const extractValueTupleFromObject = (input) => {
     const keymaps = (0, getScoredKeymapsFromObject_1.default)(input);
     const data = Array.isArray(input) ? [...input] : Object.assign({}, input);

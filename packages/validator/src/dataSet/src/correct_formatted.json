@@ -1,0 +1,53 @@
+{
+  "url": "https://cherrynpl.com",
+  "data": [
+    {
+      "A": "F_MILANO_429_62_53",
+      "B": "F",
+      "C": "Proprieta' per 377/25000",
+      "D": "MILANO (MI) VIA FEZZAN, 9 Piano S1",
+      "E": "MILANO",
+      "F": "429",
+      "G": "62",
+      "H": "53",
+      "I": "zona2 cat. D/1",
+      "J": "",
+      "K": "",
+      "L": "Euro:106,98",
+      "M": "1348921",
+      "N": ""
+    },
+    {
+      "A": "F_MILANO_429_62_714",
+      "B": "F",
+      "C": "Proprieta' per 1/1",
+      "D": "MILANO (MI) VIA FEZZAN, 9 Piano S1",
+      "E": "MILANO",
+      "F": "429",
+      "G": "62",
+      "H": "714",
+      "I": "zona2 cat. C/2",
+      "J": "3",
+      "K": "4 mq",
+      "L": "Euro:5,16",
+      "M": "",
+      "N": ""
+    },
+    {
+      "A": "F_MILANO_429_62_701",
+      "B": "F",
+      "C": "Proprieta' per 377/25000",
+      "D": "MILANO (MI) VIA FEZZAN, 9 Piano T",
+      "E": "MILANO",
+      "F": "429",
+      "G": "62",
+      "H": "701",
+      "I": "zona2 cat. A/3",
+      "J": "5",
+      "K": "2,5 vani",
+      "L": "Euro:400,25",
+      "M": "",
+      "N": ""
+    }
+  ]
+}
