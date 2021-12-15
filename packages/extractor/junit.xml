@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="6" failures="0" errors="0" time="2.717">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-12-15T14:31:43" time="2.567" tests="6">
+    <testcase classname=" Check method constructKeymapFromObject with Correct Data" name=" Check method constructKeymapFromObject with Correct Data" time="0.005">
+    </testcase>
+    <testcase classname=" Check method constructKeymapFromObject with Same Data but ordered different" name=" Check method constructKeymapFromObject with Same Data but ordered different" time="0.002">
+    </testcase>
+    <testcase classname=" Check method getScoredKeymapsFromObject with Array of Objects" name=" Check method getScoredKeymapsFromObject with Array of Objects" time="0.003">
+    </testcase>
+    <testcase classname=" Check method extractValueTupleFromObject for top-level tuple" name=" Check method extractValueTupleFromObject for top-level tuple" time="0.003">
+    </testcase>
+    <testcase classname=" Check method extractValueTupleFromObject for tuple with arrays" name=" Check method extractValueTupleFromObject for tuple with arrays" time="0.002">
+    </testcase>
+    <testcase classname=" Check method extractCorrespondentValuesFromKeymap with nested objects" name=" Check method extractCorrespondentValuesFromKeymap with nested objects" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

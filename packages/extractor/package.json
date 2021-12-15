@@ -1,0 +1,40 @@
+{
+  "name": "@cherry-challenge/extractor",
+  "version": "0.0.6-development",
+  "description": "JSON extractor as a flat tuple of values from tokenization.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": {
+    "name": "Giacomo Pasin",
+    "email": "giacomo.pasin@gmail.com"
+  },
+  "homepage": "",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "src/test"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "tsc -p . && node ./build/app.js --trace-warnings",
+    "start:watch": "nodemon",
+    "build": "tsc -p .",
+    "lint": "eslint .",
+    "semantic-release": "semantic-release",
+    "build:dev": "rimraf ./build && tsc -p .",
+    "test": "tsc -b && jest --forceExit --coverage --detectOpenHandles",
+    "package": "npm run build && npm publish"
+  },
+  "dependencies": {
+    "jest": "^27.4.5",
+    "jest-junit": "^13.0.0",
+    "nanoid": "^3.1.30",
+    "ts-jest": "^27.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest-extended": "^1.2.0"
+  }
+}
