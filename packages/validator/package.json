@@ -15,7 +15,7 @@
     "test:watch": "nodemon --watch \"src/**\" --exec \"tsc -b && jest --forceExit --coverage --detectOpenHandles\""
   },
   "dependencies": {
-    "@cherry-challenge/extractor": "^0.0.6-development",
+    "@jackpeck2004/json-value-extractor": "^0.0.6-development",
     "@supercharge/promise-pool": "^1.6.0",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",

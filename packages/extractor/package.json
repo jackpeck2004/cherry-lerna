@@ -1,5 +1,5 @@
 {
-  "name": "@cherry-challenge/extractor",
+  "name": "@jackpeck2004/json-value-extractor",
   "version": "0.0.6-development",
   "description": "JSON extractor as a flat tuple of values from tokenization.",
   "main": "lib/index.js",

@@ -5,7 +5,7 @@ WORKDIR /app
 ARG TOKEN
 COPY package.json package-lock.json ./
 # COPY /node_modules/@jackpeck2004 ./node_modules
-COPY .npmrc .npmrc
+# COPY .npmrc .npmrc
 RUN npm install
 
 
